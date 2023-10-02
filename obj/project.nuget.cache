@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xHsvaeKUK5I8YAQLnGD5wKwfFaMoHUNknJHoGqOtS6QICySM2KnmKWC/LqV83ItJ38+x1d4RpRMO0WxS3yxZeQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Student\\Desktop\\side\\mahjong\\Mahjong.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Student\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.32\\microsoft.netcore.app.host.win-x64.3.1.32.nupkg.sha512"
+  ],
+  "logs": []
+}
