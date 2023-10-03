@@ -26,3 +26,17 @@ C:\Users\Student\Desktop\side\mahjong\obj\Debug\netcoreapp3.1\Mahjong.csproj.Cor
 C:\Users\Student\Desktop\side\mahjong\obj\Debug\netcoreapp3.1\Mahjong.dll
 C:\Users\Student\Desktop\side\mahjong\obj\Debug\netcoreapp3.1\Mahjong.pdb
 C:\Users\Student\Desktop\side\mahjong\obj\Debug\netcoreapp3.1\Mahjong.genruntimeconfig.cache
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.csproj.AssemblyReference.cache
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.AssemblyInfo.cs
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.dll
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.pdb
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.exe
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.deps.json
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.runtimeconfig.json
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.runtimeconfig.dev.json
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.dll
+C:\Users\Student\Desktop\side\RiichiMahjong\bin\Debug\netcoreapp3.1\Mahjong.pdb
+C:\Users\Student\Desktop\side\RiichiMahjong\obj\Debug\netcoreapp3.1\Mahjong.genruntimeconfig.cache

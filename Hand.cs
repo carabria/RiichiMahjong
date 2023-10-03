@@ -16,6 +16,8 @@ namespace Mahjong
                 int playerTileIndex = startingIndex;
                 while (playerTileIndex < endingIndex)
                 {
+                    //an initial hand in mahjong is drawn in sets of 4 per player
+                    //then you draw 2 if dealer, and 1 if not a dealer.
                     if (playerTileIndex == 12)
                     {
                         if (isDealer)
@@ -61,12 +63,25 @@ namespace Mahjong
             }
             return tiles;
         }
+        public string ShowHand(Player player)
+        {
+            foreach (Tile tile in player.Hand)
+            {
+                Console.WriteLine(tile.ToString()); 
+            }
+            return "complete";
+        }
+
+        public List<Tile> DrawTile(List<Tile> tiles, Player player)
+        {
+            player.Hand.Add(tiles[0]);
+            tiles.Remove(tiles[0]);
+            return tiles;
+        }
+
+        public void DiscardTile(Player player, int tile)
+        {
+            player.Hand.Remove(player.Hand[tile]);
+        } 
     }
 }
-//public void DisplayHand(Player player)
-//{
-//    foreach (Tile tile in player.Hand)
-//    {
-//        Console.WriteLine(tile);
-//    }
-//}

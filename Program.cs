@@ -7,25 +7,37 @@ namespace Mahjong
     {
         static void Main(string[] args)
         {
-            int i = 0;
-            Wall walls = new Wall();
-            Hand hand = new Hand();
-            List<Player> players = new List<Player>()
-            {
-                new Player("PlayerOne"),
-                new Player("PlayerTwo"),
-                new Player("PlayerThree"),
-                new Player("PlayerFour")
-            };
-            walls.BuildWall();
-            walls.ShuffleWall();
-            Console.WriteLine(walls.Tiles.Count);
+            UserInterface ui = new UserInterface();
+            ui.Run();
+            //    int i = 0;
+            //    Wall walls = new Wall();
+            //    Hand hand = new Hand();
 
-            walls.Tiles = hand.DealHand(walls.Tiles, players);
-            // need to work on getting ShowHand to work
-            players[0].ShowHand();
-            Console.WriteLine(walls.Tiles.Count);
-            //hand.DisplayHand();
+            //    List<Player> players = new List<Player>()
+            //    {
+            //        new Player("PlayerOne"),
+            //        new Player("PlayerTwo"),
+            //        new Player("PlayerThree"),
+            //        new Player("PlayerFour")
+            //    };
+
+            //    walls.BuildWall();
+            //    walls.ShuffleWall();
+            //    Console.WriteLine(walls.Tiles.Count);
+            //    Console.WriteLine();
+
+            //    walls.Tiles = hand.DealHand(walls.Tiles, players);
+            //    hand.ShowHand(players[0]);
+            //    Console.WriteLine(walls.Tiles.Count);
+            //    Console.WriteLine();
+
+            //    walls.Tiles = hand.DrawTile(walls.Tiles, players[0]);
+            //    hand.DiscardTile(players[0], 9);
+            //    hand.ShowHand(players[0]);
+            //    Console.WriteLine();
+            //    hand.DiscardTile(players[0], 9);
+            //    hand.ShowHand(players[0]);
+            //}
         }
     }
 }
