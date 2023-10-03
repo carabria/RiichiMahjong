@@ -13,33 +13,19 @@ namespace Mahjong
             List<Tile> tempTiles = new List<Tile>(tiles);
             foreach (Player player in players)
             {
+                //an initial hand in mahjong is drawn in sets of 4 per player
+                //then you draw 2 if dealer, and 1 if not a dealer.
                 int playerTileIndex = startingIndex;
-                while (playerTileIndex < endingIndex)
+                while (playerTileIndex < 13)
                 {
-                    //an initial hand in mahjong is drawn in sets of 4 per player
-                    //then you draw 2 if dealer, and 1 if not a dealer.
-                    if (playerTileIndex == 12)
+                    if (playerTileIndex == 12 && isDealer)
                     {
-                        if (isDealer)
-                        {
-                            player.Hand.Add(tiles[playerTileIndex]);
-                            player.Hand.Add(tiles[playerTileIndex + 1]);
-                            tempTiles.Remove(tiles[playerTileIndex]);
-                            tempTiles.Remove(tiles[playerTileIndex + 1]);
-                            tiles = tempTiles;
-                            break;
-                        }
-                        else
-                        {
-                            player.Hand.Add(tiles[playerTileIndex]);
-                            tempTiles.Remove(tiles[playerTileIndex]);
-                            tiles = tempTiles;
-                            playerTileIndex++;
-                            break;
-                        }
-                    }
-                    if (playerTileIndex >= 13)
-                    {
+
+                        player.Hand.Add(tiles[playerTileIndex]);
+                        player.Hand.Add(tiles[playerTileIndex + 1]);
+                        tempTiles.Remove(tiles[playerTileIndex]);
+                        tempTiles.Remove(tiles[playerTileIndex + 1]);
+                        tiles = tempTiles;
                         break;
                     }
                     else
@@ -48,8 +34,8 @@ namespace Mahjong
                         tempTiles.Remove(tiles[playerTileIndex]);
                         playerTileIndex++;
                     }
-                    tiles = tempTiles;
                 }
+                tiles = tempTiles;
             }
             return tiles;
         }
@@ -67,7 +53,7 @@ namespace Mahjong
         {
             foreach (Tile tile in player.Hand)
             {
-                Console.WriteLine(tile.ToString()); 
+                Console.WriteLine(tile.ToString());
             }
             return "complete";
         }
@@ -82,6 +68,6 @@ namespace Mahjong
         public void DiscardTile(Player player, int tile)
         {
             player.Hand.Remove(player.Hand[tile]);
-        } 
+        }
     }
 }
